@@ -1,0 +1,305 @@
+    .slider {
+        width: 100%;
+        margin-top: 95px;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+
+    
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+.learn,
+.lorem,
+.title{
+  position: absolute;
+  left: 0;
+  margin: -33px 0 0 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  letter-spacing: .3rem;
+  color: #FFF;
+}
+
+.title{
+  font-size: 3rem;
+  top: 20%;
+}
+
+.lorem{
+  font-size: 17px;
+  line-height: 27px;
+  top: 50%;
+}
+
+.learn{
+  width: 170px;
+  padding: 22px;
+  display: block;
+  font-size: 20px;
+  line-height: 22px;
+  top: 70%;
+  text-decoration: none;
+  left: 41%;
+  letter-spacing: 1px;
+}
+
+.learn:hover{
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.item_slick{
+    position: relative;
+}
+
+
+@media only screen and (max-width: 1024px){
+
+  .title{
+    font-size: 3rem;
+    line-height: 27px;
+  }
+
+  .lorem{
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  .learn{
+    font-size: 20px;
+    line-height: 27px;
+    left: 42%;
+    width: 140px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .learn:hover{
+    padding-left: 3px;
+    padding-top: 3px;
+  }
+
+}
+
+@media only screen and (max-width: 768px){
+
+   .slider {
+        margin-top: 133px;
+    }
+
+  .title{
+  font-size: 28px;
+  line-height: 30px;
+  top: 25%;
+  letter-spacing: 1px;
+  }
+
+  .lorem{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+
+  .learn{
+    font-size: 17px;
+    line-height: 20px;
+    left: 39%;
+    width: 120px;
+    padding: 5px;
+    margin-top: 0;
+
+  }
+
+}
+
+
+@media only screen and (max-width: 480px){
+
+  .title{
+    font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  top: 30%;
+  }
+
+  .lorem{
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  .learn{
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0;
+    left: 42%;
+    width: 70px;
+    padding: 3px;
+    margin-top: -10px;
+
+  }
+
+  .learn:hover{
+    padding-left: 1px;
+    padding-top: 1px;
+  }
+
+}
+
+@media only screen and (max-width: 400px){
+
+  .title{
+    font-size: 15px;
+  line-height: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  top: 30%;
+  }
+
+  .lorem{
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  .learn{
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0;
+    left: 42%;
+    width: 70px;
+    padding: 3px;
+    margin-top: -10px;
+
+  }
+
+}

@@ -1,0 +1,1574 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/screen.scss */
+.header {
+  background-color: #FFF;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+/* line 18, ../sass/screen.scss */
+.header_block {
+  max-width: 1170px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 25, ../sass/screen.scss */
+.header_list {
+  float: right;
+}
+/* line 28, ../sass/screen.scss */
+.header_list .header_list_item {
+  display: inline-block;
+  margin-left: 25px;
+  padding: 38px 10px 38px 10px;
+}
+/* line 33, ../sass/screen.scss */
+.header_list .header_list_item > a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 41, ../sass/screen.scss */
+.menu_mobile {
+  display: none;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 49, ../sass/screen.scss */
+.header_list_mobile {
+  display: none;
+}
+
+/* line 53, ../sass/screen.scss */
+.mobile_item {
+  margin-bottom: 10px;
+}
+/* line 56, ../sass/screen.scss */
+.mobile_item > a {
+  text-decoration: none;
+  color: #000;
+}
+/* line 61, ../sass/screen.scss */
+.mobile_item > a:hover {
+  text-decoration: underline;
+  color: #60d1d3;
+}
+
+/* line 68, ../sass/screen.scss */
+#close {
+  background-color: #FFF;
+  color: #60d1d3;
+  display: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto 15px;
+}
+
+/* line 77, ../sass/screen.scss */
+#close:hover,
+#open:hover {
+  border: 1px solid #60d1d3;
+  padding-top: 0px;
+}
+
+/* line 83, ../sass/screen.scss */
+#close:hover {
+  margin: 0 auto 14px;
+}
+
+/* line 87, ../sass/screen.scss */
+#open {
+  background-color: #FFF;
+  color: #60d1d3;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto 15px;
+}
+
+/* line 95, ../sass/screen.scss */
+.active {
+  border-bottom: 3px solid #60d1d3;
+}
+/* line 98, ../sass/screen.scss */
+.active > a {
+  color: #60d1d3 !Important;
+}
+
+/* line 103, ../sass/screen.scss */
+.header_logo {
+  width: 120px;
+  height: 37px;
+  float: left;
+  margin: 27px 0 31px;
+}
+/* line 109, ../sass/screen.scss */
+.header_logo > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../images/header_logo.png) no-repeat;
+}
+
+/* line 119, ../sass/screen.scss */
+.team {
+  background-color: #FFF;
+}
+
+/* line 125, ../sass/screen.scss */
+.avatar > img {
+  margin: 39% auto;
+}
+
+/* line 130, ../sass/screen.scss */
+.team_container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 107px 0;
+}
+/* line 135, ../sass/screen.scss */
+.team_container > h2 {
+  font-size: 42px;
+  margin-bottom: 138px;
+  text-align: center;
+}
+
+/* line 142, ../sass/screen.scss */
+.team_list {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+/* line 147, ../sass/screen.scss */
+.team_list .team_list_item {
+  max-width: 247px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+/* line 153, ../sass/screen.scss */
+.team_list .team_list_item > div {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  height: 200px;
+  background-color: #eeeef0;
+  border-radius: 50%;
+  margin: 0 auto 71px;
+}
+/* line 163, ../sass/screen.scss */
+.team_list .team_list_item > strong {
+  font-size: 22px;
+  line-height: 30px;
+}
+/* line 168, ../sass/screen.scss */
+.team_list .team_list_item > span {
+  font-size: 17px;
+  line-height: 30px;
+}
+/* line 173, ../sass/screen.scss */
+.team_list .team_list_item > p {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+/* line 181, ../sass/screen.scss */
+.blog {
+  background-color: #f1f1f1;
+}
+
+/* line 185, ../sass/screen.scss */
+.blog_list {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 0 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+/* line 194, ../sass/screen.scss */
+.blog_list .blog_list_item {
+  max-width: 370px;
+  width: 100%;
+  background-color: #FFF;
+  text-align: center;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+/* line 202, ../sass/screen.scss */
+.blog_list .blog_list_item .blog_item_title {
+  width: 100%;
+  background-color: #485460;
+  margin-bottom: 28px;
+}
+/* line 207, ../sass/screen.scss */
+.blog_list .blog_list_item .blog_item_title > h4 {
+  font-size: 26px;
+  padding: 24px 0;
+  color: #fff;
+}
+/* line 214, ../sass/screen.scss */
+.blog_list .blog_list_item .blog_item_content {
+  max-width: 170px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 219, ../sass/screen.scss */
+.blog_list .blog_list_item .blog_item_content > h5 {
+  font-size: 20px;
+  margin-bottom: 45px;
+}
+/* line 224, ../sass/screen.scss */
+.blog_list .blog_list_item .blog_item_content > p {
+  font-size: 19px;
+  word-spacing: 5px;
+  line-height: 45px;
+  margin-bottom: 40px;
+}
+/* line 231, ../sass/screen.scss */
+.blog_list .blog_list_item .blog_item_content > a {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  color: #fff;
+  background-color: #788492;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+/* line 269, ../sass/screen.scss */
+.contact {
+  background: url(../images/contact_bg.png) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* line 274, ../sass/screen.scss */
+.contact .contact_box {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 107px 0 99px;
+}
+/* line 280, ../sass/screen.scss */
+.contact .contact_box > h2 {
+  font-size: 42px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 118px;
+  color: #fff;
+}
+/* line 288, ../sass/screen.scss */
+.contact .contact_box .contact_container {
+  overflow: hidden;
+  width: 100%;
+}
+/* line 292, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_form {
+  max-width: 572px;
+  width: 100%;
+  float: right;
+}
+/* line 297, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_form .form_name_email {
+  overflow: hidden;
+}
+/* line 300, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_form .form_name_email .form_name {
+  max-width: 272px;
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-radius: 4px;
+  float: left;
+  margin-bottom: 31px;
+  font-size: 20px;
+  line-height: 22px;
+}
+/* line 312, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_form .form_name_email .form_email {
+  max-width: 272px;
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-radius: 4px;
+  float: right;
+  margin-bottom: 31px;
+  font-size: 20px;
+  line-height: 22px;
+}
+/* line 326, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_form .form_message_submit {
+  overflow: hidden;
+}
+/* line 329, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_form .form_message_submit > textarea {
+  padding-top: 12px;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 31px;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 22px;
+}
+/* line 339, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_form .form_message_submit > input {
+  width: 170px;
+  height: 50px;
+  background-color: #49cbcd;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  float: right;
+  font-size: 23px;
+  line-height: 25px;
+}
+/* line 353, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_social {
+  float: left;
+  width: 43%;
+}
+/* line 357, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_social > h3 {
+  font-size: 24px;
+  line-height: 26px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+/* line 364, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_social > span {
+  color: #929292;
+  font-size: 17px;
+  line-height: 22px;
+}
+/* line 371, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_social > p {
+  font-size: 16px;
+  color: #bface2;
+  margin-bottom: 10px;
+}
+/* line 377, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_social .social_list {
+  margin-top: 40px;
+  margin-bottom: 22px;
+}
+/* line 380, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_social .social_list > li {
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 386, ../sass/screen.scss */
+.contact .contact_box .contact_container .contact_social .social_list > li > a {
+  display: block;
+  width: 42px;
+  height: 42px;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* line 406, ../sass/screen.scss */
+  .avatar > img {
+    margin: 35% auto;
+  }
+
+  /* line 411, ../sass/screen.scss */
+  .header_block {
+    padding: 0 30px;
+  }
+
+  /* line 415, ../sass/screen.scss */
+  .team_container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  /* line 420, ../sass/screen.scss */
+  .team_container > h2 {
+    font-size: 33px;
+    line-height: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  /* line 428, ../sass/screen.scss */
+  .team_list {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  /* line 433, ../sass/screen.scss */
+  .team_list .team_list_item {
+    max-width: 180px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+  }
+  /* line 439, ../sass/screen.scss */
+  .team_list .team_list_item > div {
+    display: block;
+    max-width: 150px;
+    width: 100%;
+    height: 150px;
+    background-color: #eeeef0;
+    border-radius: 50%;
+    margin: 0 auto 40px;
+  }
+  /* line 449, ../sass/screen.scss */
+  .team_list .team_list_item > strong {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  /* line 454, ../sass/screen.scss */
+  .team_list .team_list_item > span {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  /* line 459, ../sass/screen.scss */
+  .team_list .team_list_item > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* line 468, ../sass/screen.scss */
+  .contact .contact_box {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  /* line 474, ../sass/screen.scss */
+  .contact .contact_box > h2 {
+    font-size: 42px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  /* line 482, ../sass/screen.scss */
+  .contact .contact_box .contact_container {
+    overflow: hidden;
+    width: 100%;
+  }
+  /* line 486, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form {
+    max-width: 572px;
+    width: 100%;
+    float: none;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  /* line 493, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_name_email {
+    overflow: hidden;
+  }
+  /* line 496, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_name_email .form_name {
+    max-width: 272px;
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+    float: left;
+    margin-bottom: 31px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* line 508, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_name_email .form_email {
+    max-width: 272px;
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    margin-bottom: 31px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* line 521, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_message_submit {
+    overflow: hidden;
+  }
+  /* line 524, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_message_submit > textarea {
+    padding-top: 12px;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 31px;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* line 534, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_message_submit > input {
+    width: 170px;
+    height: 50px;
+    background-color: #49cbcd;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    font-size: 23px;
+    line-height: 25px;
+  }
+  /* line 548, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+  /* line 554, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social > h3 {
+    font-size: 24px;
+    line-height: 26px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  /* line 561, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social > span {
+    color: #929292;
+    font-size: 17px;
+    line-height: 22px;
+  }
+  /* line 568, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social > p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #bface2;
+    margin-bottom: 10px;
+  }
+  /* line 575, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social .social_list {
+    margin-top: 40px;
+    margin-bottom: 22px;
+  }
+  /* line 578, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social .social_list > li {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  /* line 584, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social .social_list > li > a {
+    display: block;
+    width: 42px;
+    height: 42px;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  /* line 605, ../sass/screen.scss */
+  .blog_list {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  /* line 614, ../sass/screen.scss */
+  .blog_list .blog_list_item {
+    max-width: 300px;
+    width: 100%;
+    background-color: #FFF;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  /* line 621, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_title {
+    width: 100%;
+    background-color: #485460;
+    margin-bottom: 28px;
+  }
+  /* line 626, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_title > h4 {
+    font-size: 26px;
+    line-height: 28px;
+    padding: 24px 0;
+    color: #fff;
+  }
+  /* line 634, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content {
+    max-width: 170px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 639, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > h5 {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  /* line 645, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > p {
+    font-size: 19px;
+    word-spacing: 5px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  /* line 652, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > a {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    color: #fff;
+    background-color: #788492;
+    font-size: 20px;
+    line-height: 22px;
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 940px) {
+  /* line 668, ../sass/screen.scss */
+  .blog_list {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  /* line 677, ../sass/screen.scss */
+  .blog_list .blog_list_item {
+    max-width: 240px;
+    width: 100%;
+    background-color: #FFF;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  /* line 684, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_title {
+    width: 100%;
+    background-color: #485460;
+    margin-bottom: 28px;
+  }
+  /* line 689, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_title > h4 {
+    font-size: 26px;
+    line-height: 28px;
+    padding: 14px 0;
+    color: #fff;
+  }
+  /* line 697, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content {
+    max-width: 170px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 702, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > h5 {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  /* line 708, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > p {
+    font-size: 19px;
+    word-spacing: 5px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  /* line 715, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > a {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    color: #fff;
+    background-color: #788492;
+    font-size: 20px;
+    line-height: 22px;
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 736, ../sass/screen.scss */
+  .avatar > img {
+    margin: 21% auto;
+  }
+
+  /* line 741, ../sass/screen.scss */
+  .header_list {
+    margin-top: 43px;
+    float: right;
+  }
+  /* line 745, ../sass/screen.scss */
+  .header_list .header_list_item {
+    display: inline-block;
+    margin-left: 10px;
+    padding-bottom: 38px;
+  }
+  /* line 750, ../sass/screen.scss */
+  .header_list .header_list_item > a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+  }
+
+  /* line 758, ../sass/screen.scss */
+  .menu_mobile {
+    display: block;
+    margin: 15px auto;
+  }
+
+  /* line 763, ../sass/screen.scss */
+  .header_list {
+    display: none;
+  }
+
+  /* line 767, ../sass/screen.scss */
+  .header_logo {
+    width: 120px;
+    height: 37px;
+    float: none;
+    margin: 32px auto 0;
+  }
+  /* line 773, ../sass/screen.scss */
+  .header_logo > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../images/header_logo.png) no-repeat;
+  }
+
+  /* line 781, ../sass/screen.scss */
+  .team_container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 25px 0;
+  }
+  /* line 786, ../sass/screen.scss */
+  .team_container > h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  /* line 794, ../sass/screen.scss */
+  .team_list {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  /* line 799, ../sass/screen.scss */
+  .team_list .team_list_item {
+    max-width: 250px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 20px 10px;
+  }
+  /* line 806, ../sass/screen.scss */
+  .team_list .team_list_item > div {
+    display: block;
+    max-width: 75px;
+    width: 100%;
+    height: 75px;
+    background-color: #eeeef0;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+  }
+  /* line 816, ../sass/screen.scss */
+  .team_list .team_list_item > strong {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  /* line 821, ../sass/screen.scss */
+  .team_list .team_list_item > span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  /* line 826, ../sass/screen.scss */
+  .team_list .team_list_item > p {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  /* line 833, ../sass/screen.scss */
+  .blog_list {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  /* line 842, ../sass/screen.scss */
+  .blog_list .blog_list_item {
+    max-width: 200px;
+    width: 100%;
+    background-color: #FFF;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  /* line 849, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_title {
+    width: 100%;
+    background-color: #485460;
+    margin-bottom: 18px;
+  }
+  /* line 854, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_title > h4 {
+    font-size: 26px;
+    line-height: 28px;
+    padding: 4px 0;
+    color: #fff;
+  }
+  /* line 862, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content {
+    max-width: 150px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 867, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > h5 {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 873, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > p {
+    font-size: 17px;
+    word-spacing: 2px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 880, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > a {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    color: #fff;
+    background-color: #788492;
+    font-size: 17px;
+    line-height: 19px;
+    padding: 6px 0;
+  }
+
+  /* line 895, ../sass/screen.scss */
+  .contact_social {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  /* line 904, ../sass/screen.scss */
+  .contact_social {
+    margin-top: 50px;
+  }
+
+  /* line 907, ../sass/screen.scss */
+  .blog_list {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  /* line 916, ../sass/screen.scss */
+  .blog_list .blog_list_item {
+    max-width: 150px;
+    width: 100%;
+    background-color: #FFF;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  /* line 923, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_title {
+    width: 100%;
+    background-color: #485460;
+    margin-bottom: 10px;
+  }
+  /* line 928, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_title > h4 {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 4px 0;
+    color: #fff;
+  }
+  /* line 936, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content {
+    max-width: 145px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 941, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > h5 {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 12px;
+  }
+  /* line 947, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > p {
+    font-size: 16px;
+    word-spacing: 2px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  /* line 954, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > a {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    color: #fff;
+    background-color: #788492;
+    font-size: 15px;
+    line-height: 17px;
+    padding: 4px 0;
+  }
+
+  /* line 968, ../sass/screen.scss */
+  .team_list {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  /* line 973, ../sass/screen.scss */
+  .team_list .team_list_item {
+    max-width: 180px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 20px 10px;
+  }
+  /* line 980, ../sass/screen.scss */
+  .team_list .team_list_item > div {
+    display: block;
+    max-width: 75px;
+    width: 100%;
+    height: 75px;
+    background-color: #eeeef0;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+  }
+  /* line 990, ../sass/screen.scss */
+  .team_list .team_list_item > strong {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  /* line 995, ../sass/screen.scss */
+  .team_list .team_list_item > span {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  /* line 1000, ../sass/screen.scss */
+  .team_list .team_list_item > p {
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  /* line 1008, ../sass/screen.scss */
+  .contact .contact_box {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  /* line 1014, ../sass/screen.scss */
+  .contact .contact_box > h2 {
+    font-size: 42px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  /* line 1022, ../sass/screen.scss */
+  .contact .contact_box .contact_container {
+    overflow: hidden;
+    width: 100%;
+  }
+  /* line 1026, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form {
+    max-width: 450px;
+    width: 100%;
+    float: none;
+    overflow: hidden;
+    margin: 0 auto 40px;
+  }
+  /* line 1033, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_name_email {
+    overflow: hidden;
+  }
+  /* line 1036, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_name_email .form_name {
+    max-width: 100%;
+    width: 100%;
+    height: 33px;
+    border: none;
+    border-radius: 4px;
+    float: left;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* line 1048, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_name_email .form_email {
+    max-width: 100%;
+    width: 100%;
+    height: 33px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* line 1061, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_message_submit {
+    overflow: hidden;
+  }
+  /* line 1064, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_message_submit > textarea {
+    padding-top: 12px;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* line 1074, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_message_submit > input {
+    width: 100px;
+    height: 35px;
+    background-color: #49cbcd;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* line 1087, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social {
+    float: none;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* line 1093, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social > h3 {
+    font-size: 24px;
+    line-height: 26px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  /* line 1100, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social > span {
+    color: #929292;
+    font-size: 17px;
+    line-height: 22px;
+  }
+  /* line 1107, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social > p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #bface2;
+    margin-bottom: 10px;
+  }
+  /* line 1114, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social .social_list {
+    margin-top: 40px;
+    margin-bottom: 22px;
+  }
+  /* line 1117, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social .social_list > li {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  /* line 1123, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social .social_list > li > a {
+    display: block;
+    width: 42px;
+    height: 42px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 1141, ../sass/screen.scss */
+  .contact .contact_box {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  /* line 1147, ../sass/screen.scss */
+  .contact .contact_box > h2 {
+    font-size: 42px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  /* line 1155, ../sass/screen.scss */
+  .contact .contact_box .contact_container {
+    overflow: hidden;
+    width: 100%;
+  }
+  /* line 1159, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form {
+    max-width: 350px;
+    width: 100%;
+    float: none;
+    overflow: hidden;
+    margin: 0 auto 50px;
+  }
+  /* line 1166, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_name_email {
+    overflow: hidden;
+  }
+  /* line 1169, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_name_email .form_name {
+    max-width: 100%;
+    width: 100%;
+    height: 33px;
+    border: none;
+    border-radius: 4px;
+    float: left;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* line 1181, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_name_email .form_email {
+    max-width: 100%;
+    width: 100%;
+    height: 33px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* line 1194, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_message_submit {
+    overflow: hidden;
+  }
+  /* line 1197, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_message_submit > textarea {
+    padding-top: 12px;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* line 1207, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_message_submit > input {
+    width: 60px;
+    height: 30px;
+    background-color: #49cbcd;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  /* line 1220, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social {
+    float: none;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* line 1226, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social > h3 {
+    font-size: 24px;
+    line-height: 26px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  /* line 1233, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social > span {
+    color: #929292;
+    font-size: 17px;
+    line-height: 22px;
+  }
+  /* line 1240, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social > p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #bface2;
+    margin-bottom: 10px;
+  }
+  /* line 1247, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social .social_list {
+    margin-top: 40px;
+    margin-bottom: 22px;
+  }
+  /* line 1250, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social .social_list > li {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  /* line 1256, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social .social_list > li > a {
+    display: block;
+    width: 42px;
+    height: 42px;
+  }
+
+  /* line 1270, ../sass/screen.scss */
+  .blog_list {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  /* line 1279, ../sass/screen.scss */
+  .blog_list .blog_list_item {
+    max-width: 250px;
+    width: 100%;
+    background-color: #FFF;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  /* line 1287, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_title {
+    width: 100%;
+    background-color: #485460;
+    margin-bottom: 10px;
+  }
+  /* line 1292, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_title > h4 {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 4px 0;
+    color: #fff;
+  }
+  /* line 1300, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content {
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 1305, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > h5 {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 12px;
+  }
+  /* line 1311, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > p {
+    font-size: 14px;
+    word-spacing: 2px;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+  /* line 1318, ../sass/screen.scss */
+  .blog_list .blog_list_item .blog_item_content > a {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    color: #fff;
+    background-color: #788492;
+    font-size: 15px;
+    line-height: 17px;
+    padding: 4px 0;
+  }
+
+  /* line 1332, ../sass/screen.scss */
+  .team_list {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  /* line 1337, ../sass/screen.scss */
+  .team_list .team_list_item {
+    max-width: 150px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 20px 10px;
+  }
+  /* line 1344, ../sass/screen.scss */
+  .team_list .team_list_item > div {
+    display: block;
+    max-width: 75px;
+    width: 100%;
+    height: 75px;
+    background-color: #eeeef0;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+  }
+  /* line 1354, ../sass/screen.scss */
+  .team_list .team_list_item > strong {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  /* line 1359, ../sass/screen.scss */
+  .team_list .team_list_item > span {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  /* line 1364, ../sass/screen.scss */
+  .team_list .team_list_item > p {
+    font-size: 13px;
+    line-height: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 1376, ../sass/screen.scss */
+  .avatar > img {
+    margin: 8% auto;
+  }
+
+  /* line 1382, ../sass/screen.scss */
+  .contact .contact_box {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  /* line 1388, ../sass/screen.scss */
+  .contact .contact_box > h2 {
+    font-size: 42px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  /* line 1396, ../sass/screen.scss */
+  .contact .contact_box .contact_container {
+    overflow: hidden;
+    width: 100%;
+  }
+  /* line 1400, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form {
+    max-width: 250px;
+    width: 100%;
+    float: none;
+    overflow: hidden;
+    margin: 0 auto 50px;
+  }
+  /* line 1407, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_name_email {
+    overflow: hidden;
+  }
+  /* line 1410, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_name_email .form_name {
+    max-width: 100%;
+    width: 100%;
+    height: 33px;
+    border: none;
+    border-radius: 4px;
+    float: left;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* line 1422, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_name_email .form_email {
+    max-width: 100%;
+    width: 100%;
+    height: 33px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* line 1435, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_message_submit {
+    overflow: hidden;
+  }
+  /* line 1438, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_message_submit > textarea {
+    padding-top: 12px;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* line 1448, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_form .form_message_submit > input {
+    width: 60px;
+    height: 30px;
+    background-color: #49cbcd;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  /* line 1461, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social {
+    float: none;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* line 1467, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social > h3 {
+    font-size: 24px;
+    line-height: 26px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  /* line 1474, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social > span {
+    color: #929292;
+    font-size: 17px;
+    line-height: 22px;
+  }
+  /* line 1481, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social > p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #bface2;
+    margin-bottom: 10px;
+  }
+  /* line 1488, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social .social_list {
+    margin-top: 40px;
+    margin-bottom: 22px;
+  }
+  /* line 1491, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social .social_list > li {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  /* line 1497, ../sass/screen.scss */
+  .contact .contact_box .contact_container .contact_social .social_list > li > a {
+    display: block;
+    width: 42px;
+    height: 42px;
+  }
+
+  /* line 1511, ../sass/screen.scss */
+  .team_list {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  /* line 1516, ../sass/screen.scss */
+  .team_list .team_list_item {
+    max-width: 120px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 10px 10px;
+  }
+  /* line 1523, ../sass/screen.scss */
+  .team_list .team_list_item > div {
+    display: block;
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    background-color: #eeeef0;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+  }
+  /* line 1533, ../sass/screen.scss */
+  .team_list .team_list_item > strong {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  /* line 1538, ../sass/screen.scss */
+  .team_list .team_list_item > span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  /* line 1543, ../sass/screen.scss */
+  .team_list .team_list_item > p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

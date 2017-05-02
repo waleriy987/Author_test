@@ -1,0 +1,1549 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
+.header{
+	background-color: #FFF;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+
+.header_block{
+	max-width: 1170px;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+
+.header_list{
+	float: right;
+
+	.header_list_item{
+		display: inline-block;
+		margin-left: 25px;
+		padding: 38px 10px 38px 10px;
+
+		&>a{
+			display: block;
+			text-decoration: none;
+			color: #000;
+		}
+	}
+}
+
+.menu_mobile{
+	display: none;
+	width: 100px;
+	margin: 0 auto;
+	text-align: center;
+	cursor: pointer;
+}
+
+.header_list_mobile{
+	display: none;
+}
+
+.mobile_item{
+	margin-bottom: 10px;
+
+	&>a{
+		text-decoration: none;
+		color: #000;
+	}
+
+	&>a:hover{
+		text-decoration: underline;
+		color: #60d1d3;
+	}
+}
+
+
+#close{
+	background-color: #FFF;
+	color: #60d1d3;
+	display: none;
+	border: none;
+	cursor: pointer;
+	margin: 0 auto 15px;
+}
+
+#close:hover,
+#open:hover{
+	border: 1px solid #60d1d3;
+	padding-top: 0px;
+}
+
+#close:hover{
+	margin: 0 auto 14px;
+}
+
+#open{
+	background-color: #FFF;
+	color: #60d1d3;
+	border: none;
+	cursor: pointer;
+	margin: 0 auto 15px;
+}
+
+.active{
+  border-bottom: 3px solid #60d1d3;
+
+  &>a{
+  	color: #60d1d3 !Important;
+  } 
+}
+
+.header_logo{
+	width: 120px;
+	height: 37px;
+	float: left;
+	margin: 27px 0 31px;
+
+	&>a{
+		width: 100%;
+		height: 100%;
+		display: block;
+		background: url(../images/header_logo.png) no-repeat;
+	}
+}
+
+
+
+.team{
+	background-color: #FFF;
+}
+
+.avatar{
+
+	&>img{
+		margin: 39% auto;
+	}
+}
+
+.team_container{
+	max-width: 1150px;
+	margin: 0 auto;
+	padding: 107px 0;
+
+	&>h2{
+		font-size: 42px;
+		margin-bottom: 138px;
+		text-align: center;
+	}
+}
+
+.team_list{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+
+	.team_list_item{
+		max-width: 247px;
+		width: 100%;
+		cursor: pointer;
+		text-align: center;
+
+		&>div{
+			display: block;
+			max-width: 200px;
+			width: 100%;
+			height: 200px;
+			background-color: #eeeef0;
+			border-radius: 50%;
+			margin: 0 auto 71px;
+		}
+
+		&>strong{
+			font-size: 22px;
+			line-height: 30px;
+		}
+
+		&>span{
+			font-size: 17px;
+			line-height: 30px;
+		}
+
+		&>p{
+			font-size: 15px;
+			line-height: 22px;
+		}
+	}
+}
+
+
+.blog{
+	background-color: #f1f1f1;
+}
+
+.blog_list{
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 120px 0 100px;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+
+	.blog_list_item{
+		max-width: 370px;
+		width: 100%;
+		background-color: #FFF;
+		text-align: center;
+		padding-bottom: 30px;
+		cursor: pointer;
+
+		.blog_item_title{
+			width: 100%;
+			background-color: #485460;
+			margin-bottom: 28px;
+
+			&>h4{
+				font-size: 26px;
+				padding: 24px 0;
+				color: #fff;
+			}
+		}
+
+		.blog_item_content{
+			max-width: 170px;
+			width: 100%;
+			margin: 0 auto;
+
+			&>h5{
+				font-size: 20px;
+				margin-bottom: 45px;
+			}
+
+			&>p{
+				font-size: 19px;
+				word-spacing: 5px;
+				line-height: 45px;
+				margin-bottom: 40px;
+			}
+
+			&>a{
+				text-decoration: none;
+				width: 100%;
+				display: block;
+				color: #fff;
+				background-color: #788492;
+				font-size: 20px;
+				padding: 10px 0;
+			}
+		}
+	}
+}
+
+// .blog_item_content{
+	
+// 	&>a:hover{
+// 		background-color: #49cbcd !Important;
+
+// 		.blog_item_title{
+// 			background-color: #49cbcd !Important;
+// 		}
+// 	}
+// }
+
+// .blog_item_active{
+
+// 	.blog_item_title{
+// 		background-color: #49cbcd !Important;
+// 	}
+
+// 	.blog_item_content{
+
+// 		&>a{
+// 			background-color: #49cbcd !Important;
+// 		}
+// 	}
+// }
+
+.contact{
+	background: url(../images/contact_bg.png) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+
+	.contact_box{
+		max-width: 1170px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 107px 0 99px;
+
+		&>h2{
+			font-size: 42px;
+			line-height: 44px;
+			text-align: center;
+			margin-bottom: 118px;
+			color: #fff;
+		}
+
+		.contact_container{
+			overflow: hidden;
+			width: 100%;
+
+			.contact_form{
+				max-width: 572px;
+				width: 100%;
+				float: right;
+				
+				.form_name_email{
+					overflow: hidden;
+
+					.form_name{
+						max-width: 272px;
+						width: 100%;
+						height: 44px;
+						border: none;
+						border-radius: 4px;
+						float: left;
+						margin-bottom: 31px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+
+					.form_email{
+						max-width: 272px;
+						width: 100%;
+						height: 44px;
+						border: none;
+						border-radius: 4px;
+						float: right;
+						margin-bottom: 31px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+				}
+
+
+				.form_message_submit{
+					overflow: hidden;
+
+					&>textarea{
+						padding-top: 12px;
+						width: 100%;
+						height: 180px;
+						margin-bottom: 31px;
+						border-radius: 4px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+
+					&>input{
+						width: 170px;
+						height: 50px;
+						background-color: #49cbcd;
+						color: #fff;
+						border: none;
+						border-radius: 4px;
+						float: right;
+						font-size: 23px;
+						line-height: 25px;
+					}
+				}
+			}
+
+			.contact_social{
+				float: left;
+				width: 43%;
+
+				&>h3{
+					font-size: 24px;
+					line-height: 26px;
+					color: #fff;
+					margin-bottom: 15px;
+				}
+
+				&>span{
+					color: #929292;
+					font-size: 17px;
+					line-height: 22px;
+					
+				}
+
+				&>p{
+					font-size: 16px;
+					color: #bface2;
+					margin-bottom: 10px;
+				}
+
+				.social_list{
+					margin-top: 40px;
+					margin-bottom: 22px;
+					&>li{
+						width: 42px;
+						height: 42px;
+						display: inline-block;
+						margin-right: 10px;
+
+						&>a{
+							display: block;
+							width: 42px;
+							height: 42px;
+
+						}
+
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+@media only screen and (max-width: 1024px){
+
+	.avatar{
+
+		&>img{
+			margin: 35% auto;
+		}
+	}
+	
+	.header_block{
+		padding: 0 30px;
+	}
+
+	.team_container{
+		max-width: 1150px;
+		margin: 0 auto;
+		padding: 50px 0;
+
+		&>h2{
+			font-size: 33px;
+			line-height: 35px;
+			margin-bottom: 50px;
+			text-align: center;
+		}
+	}
+
+	.team_list{
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+
+		.team_list_item{
+			max-width: 180px;
+			width: 100%;
+			cursor: pointer;
+			text-align: center;
+
+			&>div{
+				display: block;
+				max-width: 150px;
+				width: 100%;
+				height: 150px;
+				background-color: #eeeef0;
+				border-radius: 50%;
+				margin: 0 auto 40px;
+			}
+
+			&>strong{
+				font-size: 20px;
+				line-height: 25px;
+			}
+
+			&>span{
+				font-size: 16px;
+				line-height: 23px;
+			}
+
+			&>p{
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
+
+
+	.contact{
+	.contact_box{
+		max-width: 1170px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 30px 0;
+
+		&>h2{
+			font-size: 42px;
+			line-height: 44px;
+			text-align: center;
+			margin-bottom: 40px;
+			color: #fff;
+		}
+
+		.contact_container{
+			overflow: hidden;
+			width: 100%;
+
+			.contact_form{
+				max-width: 572px;
+				width: 100%;
+				float: none;
+				overflow: hidden;
+				margin: 0 auto;
+
+				.form_name_email{
+					overflow: hidden;
+
+					.form_name{
+						max-width: 272px;
+						width: 100%;
+						height: 44px;
+						border: none;
+						border-radius: 4px;
+						float: left;
+						margin-bottom: 31px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+
+					.form_email{
+						max-width: 272px;
+						width: 100%;
+						height: 44px;
+						border: none;
+						border-radius: 4px;
+						float: right;
+						margin-bottom: 31px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+				}
+
+				.form_message_submit{
+					overflow: hidden;
+
+					&>textarea{
+						padding-top: 12px;
+						width: 100%;
+						height: 180px;
+						margin-bottom: 31px;
+						border-radius: 4px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+
+					&>input{
+						width: 170px;
+						height: 50px;
+						background-color: #49cbcd;
+						color: #fff;
+						border: none;
+						border-radius: 4px;
+						float: right;
+						font-size: 23px;
+						line-height: 25px;
+					}
+				}
+
+			}
+			.contact_social{
+				float: none;
+				width: 100%;
+				text-align: center;
+				margin-top: 50px;
+
+				&>h3{
+					font-size: 24px;
+					line-height: 26px;
+					color: #fff;
+					margin-bottom: 15px;
+				}
+
+				&>span{
+					color: #929292;
+					font-size: 17px;
+					line-height: 22px;
+					
+				}
+
+				&>p{
+					font-size: 16px;
+					line-height: 28px;
+					color: #bface2;
+					margin-bottom: 10px;
+				}
+
+				.social_list{
+					margin-top: 40px;
+					margin-bottom: 22px;
+					&>li{
+						width: 42px;
+						height: 42px;
+						display: inline-block;
+						margin-right: 10px;
+
+						&>a{
+							display: block;
+							width: 42px;
+							height: 42px;
+
+						}
+
+					}
+				}
+			}
+		}
+	}
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 1140px){
+
+	.blog_list{
+		max-width: 1170px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 70px 0 60px;
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+
+		.blog_list_item{
+			max-width: 300px;
+			width: 100%;
+			background-color: #FFF;
+			text-align: center;
+			padding-bottom: 30px;
+
+			.blog_item_title{
+				width: 100%;
+				background-color: #485460;
+				margin-bottom: 28px;
+
+				&>h4{
+					font-size: 26px;
+					line-height: 28px;
+					padding: 24px 0;
+					color: #fff;
+				}
+			}
+
+			.blog_item_content{
+				max-width: 170px;
+				width: 100%;
+				margin: 0 auto;
+
+				&>h5{
+					font-size: 20px;
+					line-height: 22px;
+					margin-bottom: 30px;
+				}
+
+				&>p{
+					font-size: 19px;
+					word-spacing: 5px;
+					line-height: 25px;
+					margin-bottom: 30px;
+				}
+
+				&>a{
+					text-decoration: none;
+					width: 100%;
+					display: block;
+					color: #fff;
+					background-color: #788492;
+					font-size: 20px;
+					line-height: 22px;
+					padding: 10px 0;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 940px){
+	.blog_list{
+		max-width: 1170px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 70px 0 60px;
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+
+		.blog_list_item{
+			max-width: 240px;
+			width: 100%;
+			background-color: #FFF;
+			text-align: center;
+			padding-bottom: 30px;
+
+			.blog_item_title{
+				width: 100%;
+				background-color: #485460;
+				margin-bottom: 28px;
+
+				&>h4{
+					font-size: 26px;
+					line-height: 28px;
+					padding: 14px 0;
+					color: #fff;
+				}
+			}
+
+			.blog_item_content{
+				max-width: 170px;
+				width: 100%;
+				margin: 0 auto;
+
+				&>h5{
+					font-size: 20px;
+					line-height: 22px;
+					margin-bottom: 30px;
+				}
+
+				&>p{
+					font-size: 19px;
+					word-spacing: 5px;
+					line-height: 25px;
+					margin-bottom: 30px;
+				}
+
+				&>a{
+					text-decoration: none;
+					width: 100%;
+					display: block;
+					color: #fff;
+					background-color: #788492;
+					font-size: 20px;
+					line-height: 22px;
+					padding: 10px 0;
+				}
+			}
+		}
+	}
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+	.avatar{
+
+		&>img{
+			margin: 21% auto;
+		}
+	}
+	
+	.header_list{
+		margin-top: 43px;
+		float: right;
+
+		.header_list_item{
+			display: inline-block;
+			margin-left: 10px;
+			padding-bottom: 38px;
+
+			&>a{
+				display: block;
+				text-decoration: none;
+				color: #000;
+			}
+		}
+	}
+
+	.menu_mobile{
+		display: block;
+		margin: 15px auto;
+	}
+
+	.header_list{
+		display: none;
+	}
+
+	.header_logo{
+		width: 120px;
+		height: 37px;
+		float: none;
+		margin: 32px auto 0;
+
+		&>a{
+			width: 100%;
+			height: 100%;
+			display: block;
+			background: url(../images/header_logo.png) no-repeat;
+		}
+	}
+
+	.team_container{
+		max-width: 1150px;
+		margin: 0 auto;
+		padding: 25px 0;
+
+		&>h2{
+			font-size: 24px;
+			line-height: 26px;
+			margin-bottom: 25px;
+			text-align: center;
+		}
+	}
+
+	.team_list{
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+
+		.team_list_item{
+			max-width: 250px;
+			width: 100%;
+			cursor: pointer;
+			text-align: center;
+			margin: 0 20px 10px;
+
+			&>div{
+				display: block;
+				max-width: 75px;
+				width: 100%;
+				height: 75px;
+				background-color: #eeeef0;
+				border-radius: 50%;
+				margin: 0 auto 25px;
+			}
+
+			&>strong{
+				font-size: 18px;
+				line-height: 23px;
+			}
+
+			&>span{
+				font-size: 14px;
+				line-height: 20px;
+			}
+
+			&>p{
+				font-size: 13px;
+				line-height: 15px;
+			}
+		}
+	}
+
+	.blog_list{
+		max-width: 1170px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 30px 0 20px;
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+
+		.blog_list_item{
+			max-width: 200px;
+			width: 100%;
+			background-color: #FFF;
+			text-align: center;
+			padding-bottom: 30px;
+
+			.blog_item_title{
+				width: 100%;
+				background-color: #485460;
+				margin-bottom: 18px;
+
+				&>h4{
+					font-size: 26px;
+					line-height: 28px;
+					padding: 4px 0;
+					color: #fff;
+				}
+			}
+
+			.blog_item_content{
+				max-width: 150px;
+				width: 100%;
+				margin: 0 auto;
+
+				&>h5{
+					font-size: 18px;
+					line-height: 20px;
+					margin-bottom: 20px;
+				}
+
+				&>p{
+					font-size: 17px;
+					word-spacing: 2px;
+					line-height: 20px;
+					margin-bottom: 20px;
+				}
+
+				&>a{
+					text-decoration: none;
+					width: 100%;
+					display: block;
+					color: #fff;
+					background-color: #788492;
+					font-size: 17px;
+					line-height: 19px;
+					padding: 6px 0;
+				}
+			}
+		}
+	}
+
+
+	.contact_social{
+		margin-top: 50px;
+	}
+
+
+
+}
+
+@media only screen and (max-width: 630px){
+	.contact_social{
+		margin-top: 50px;
+	}
+	.blog_list{
+		max-width: 1170px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 30px 0 20px;
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+
+		.blog_list_item{
+			max-width: 150px;
+			width: 100%;
+			background-color: #FFF;
+			text-align: center;
+			padding-bottom: 10px;
+
+			.blog_item_title{
+				width: 100%;
+				background-color: #485460;
+				margin-bottom: 10px;
+
+				&>h4{
+					font-size: 18px;
+					line-height: 20px;
+					padding: 4px 0;
+					color: #fff;
+				}
+			}
+
+			.blog_item_content{
+				max-width: 145px;
+				width: 100%;
+				margin: 0 auto;
+
+				&>h5{
+					font-size: 16px;
+					line-height: 18px;
+					margin-bottom: 12px;
+				}
+
+				&>p{
+					font-size: 16px;
+					word-spacing: 2px;
+					line-height: 18px;
+					margin-bottom: 10px;
+				}
+
+				&>a{
+					text-decoration: none;
+					width: 100%;
+					display: block;
+					color: #fff;
+					background-color: #788492;
+					font-size: 15px;
+					line-height: 17px;
+					padding: 4px 0;
+				}
+			}
+		}
+	}
+
+	.team_list{
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+
+		.team_list_item{
+			max-width: 180px;
+			width: 100%;
+			cursor: pointer;
+			text-align: center;
+			margin: 0 20px 10px;
+
+			&>div{
+				display: block;
+				max-width: 75px;
+				width: 100%;
+				height: 75px;
+				background-color: #eeeef0;
+				border-radius: 50%;
+				margin: 0 auto 15px;
+			}
+
+			&>strong{
+				font-size: 16px;
+				line-height: 20px;
+			}
+
+			&>span{
+				font-size: 13px;
+				line-height: 18px;
+			}
+
+			&>p{
+				font-size: 13px;
+				line-height: 14px;
+			}
+		}
+	}
+
+		.contact{
+	.contact_box{
+		max-width: 1170px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 30px 0;
+
+		&>h2{
+			font-size: 42px;
+			line-height: 44px;
+			text-align: center;
+			margin-bottom: 40px;
+			color: #fff;
+		}
+
+		.contact_container{
+			overflow: hidden;
+			width: 100%;
+
+			.contact_form{
+				max-width: 450px;
+				width: 100%;
+				float: none;
+				overflow: hidden;
+				margin: 0 auto 40px;
+
+				.form_name_email{
+					overflow: hidden;
+
+					.form_name{
+						max-width: 100%;
+						width: 100%;
+						height: 33px;
+						border: none;
+						border-radius: 4px;
+						float: left;
+						margin-bottom: 20px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+
+					.form_email{
+						max-width: 100%;
+						width: 100%;
+						height: 33px;
+						border: none;
+						border-radius: 4px;
+						float: right;
+						margin-bottom: 20px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+				}
+
+				.form_message_submit{
+					overflow: hidden;
+
+					&>textarea{
+						padding-top: 12px;
+						width: 100%;
+						height: 180px;
+						margin-bottom: 10px;
+						border-radius: 4px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+
+					&>input{
+						width: 100px;
+						height: 35px;
+						background-color: #49cbcd;
+						color: #fff;
+						border: none;
+						border-radius: 4px;
+						float: right;
+						font-size: 20px;
+						line-height: 22px;
+					}
+				}
+			}
+			.contact_social{
+				float: none;
+				width: 80%;
+				text-align: center;
+				margin: 0 auto;
+
+				&>h3{
+					font-size: 24px;
+					line-height: 26px;
+					color: #fff;
+					margin-bottom: 15px;
+				}
+
+				&>span{
+					color: #929292;
+					font-size: 17px;
+					line-height: 22px;
+					
+				}
+
+				&>p{
+					font-size: 16px;
+					line-height: 28px;
+					color: #bface2;
+					margin-bottom: 10px;
+				}
+
+				.social_list{
+					margin-top: 40px;
+					margin-bottom: 22px;
+					&>li{
+						width: 42px;
+						height: 42px;
+						display: inline-block;
+						margin-right: 10px;
+
+						&>a{
+							display: block;
+							width: 42px;
+							height: 42px;
+
+						}
+
+					}
+				}
+			}
+		}
+	}
+}
+}
+
+@media only screen and (max-width: 480px){
+
+			.contact{
+	.contact_box{
+		max-width: 1170px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 30px 0;
+
+		&>h2{
+			font-size: 42px;
+			line-height: 44px;
+			text-align: center;
+			margin-bottom: 40px;
+			color: #fff;
+		}
+
+		.contact_container{
+			overflow: hidden;
+			width: 100%;
+
+			.contact_form{
+				max-width: 350px;
+				width: 100%;
+				float: none;
+				overflow: hidden;
+				margin: 0 auto 50px;
+
+				.form_name_email{
+					overflow: hidden;
+
+					.form_name{
+						max-width: 100%;
+						width: 100%;
+						height: 33px;
+						border: none;
+						border-radius: 4px;
+						float: left;
+						margin-bottom: 15px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+
+					.form_email{
+						max-width: 100%;
+						width: 100%;
+						height: 33px;
+						border: none;
+						border-radius: 4px;
+						float: right;
+						margin-bottom: 15px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+				}
+
+				.form_message_submit{
+					overflow: hidden;
+
+					&>textarea{
+						padding-top: 12px;
+						width: 100%;
+						height: 80px;
+						margin-bottom: 10px;
+						border-radius: 4px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+
+					&>input{
+						width: 60px;
+						height: 30px;
+						background-color: #49cbcd;
+						color: #fff;
+						border: none;
+						border-radius: 4px;
+						float: right;
+						font-size: 18px;
+						line-height: 20px;
+					}
+				}
+			}
+			.contact_social{
+				float: none;
+				width: 80%;
+				text-align: center;
+				margin: 0 auto;
+
+				&>h3{
+					font-size: 24px;
+					line-height: 26px;
+					color: #fff;
+					margin-bottom: 15px;
+				}
+
+				&>span{
+					color: #929292;
+					font-size: 17px;
+					line-height: 22px;
+					
+				}
+
+				&>p{
+					font-size: 16px;
+					line-height: 18px;
+					color: #bface2;
+					margin-bottom: 10px;
+				}
+
+				.social_list{
+					margin-top: 40px;
+					margin-bottom: 22px;
+					&>li{
+						width: 42px;
+						height: 42px;
+						display: inline-block;
+						margin-right: 10px;
+
+						&>a{
+							display: block;
+							width: 42px;
+							height: 42px;
+
+						}
+
+					}
+				}
+			}
+		}
+	}
+}
+
+	.blog_list{
+		max-width: 1170px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 30px 0 20px;
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+
+		.blog_list_item{
+			max-width: 250px;
+			width: 100%;
+			background-color: #FFF;
+			text-align: center;
+			padding-bottom: 10px;
+			margin-bottom: 30px;
+
+			.blog_item_title{
+				width: 100%;
+				background-color: #485460;
+				margin-bottom: 10px;
+
+				&>h4{
+					font-size: 18px;
+					line-height: 20px;
+					padding: 4px 0;
+					color: #fff;
+				}
+			}
+
+			.blog_item_content{
+				max-width: 200px;
+				width: 100%;
+				margin: 0 auto;
+
+				&>h5{
+					font-size: 16px;
+					line-height: 18px;
+					margin-bottom: 12px;
+				}
+
+				&>p{
+					font-size: 14px;
+					word-spacing: 2px;
+					line-height: 35px;
+					margin-bottom: 10px;
+				}
+
+				&>a{
+					text-decoration: none;
+					width: 100%;
+					display: block;
+					color: #fff;
+					background-color: #788492;
+					font-size: 15px;
+					line-height: 17px;
+					padding: 4px 0;
+				}
+			}
+		}
+	}
+
+	.team_list{
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+
+		.team_list_item{
+			max-width: 150px;
+			width: 100%;
+			cursor: pointer;
+			text-align: center;
+			margin: 0 20px 10px;
+
+			&>div{
+				display: block;
+				max-width: 75px;
+				width: 100%;
+				height: 75px;
+				background-color: #eeeef0;
+				border-radius: 50%;
+				margin: 0 auto 15px;
+			}
+
+			&>strong{
+				font-size: 16px;
+				line-height: 20px;
+			}
+
+			&>span{
+				font-size: 13px;
+				line-height: 18px;
+			}
+
+			&>p{
+				font-size: 13px;
+				line-height: 14px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 400px){
+
+	.avatar{
+
+		&>img{
+			margin: 8% auto;
+		}
+	}
+
+				.contact{
+	.contact_box{
+		max-width: 1170px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 30px 0;
+
+		&>h2{
+			font-size: 42px;
+			line-height: 44px;
+			text-align: center;
+			margin-bottom: 40px;
+			color: #fff;
+		}
+
+		.contact_container{
+			overflow: hidden;
+			width: 100%;
+
+			.contact_form{
+				max-width: 250px;
+				width: 100%;
+				float: none;
+				overflow: hidden;
+				margin: 0 auto 50px;
+
+				.form_name_email{
+					overflow: hidden;
+
+					.form_name{
+						max-width: 100%;
+						width: 100%;
+						height: 33px;
+						border: none;
+						border-radius: 4px;
+						float: left;
+						margin-bottom: 10px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+
+					.form_email{
+						max-width: 100%;
+						width: 100%;
+						height: 33px;
+						border: none;
+						border-radius: 4px;
+						float: right;
+						margin-bottom: 10px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+				}
+
+				.form_message_submit{
+					overflow: hidden;
+
+					&>textarea{
+						padding-top: 12px;
+						width: 100%;
+						height: 80px;
+						margin-bottom: 10px;
+						border-radius: 4px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+
+					&>input{
+						width: 60px;
+						height: 30px;
+						background-color: #49cbcd;
+						color: #fff;
+						border: none;
+						border-radius: 4px;
+						float: right;
+						font-size: 18px;
+						line-height: 20px;
+					}
+				}
+			}
+			.contact_social{
+				float: none;
+				width: 80%;
+				text-align: center;
+				margin: 0 auto;
+
+				&>h3{
+					font-size: 24px;
+					line-height: 26px;
+					color: #fff;
+					margin-bottom: 15px;
+				}
+
+				&>span{
+					color: #929292;
+					font-size: 17px;
+					line-height: 22px;
+					
+				}
+
+				&>p{
+					font-size: 16px;
+					line-height: 18px;
+					color: #bface2;
+					margin-bottom: 10px;
+				}
+
+				.social_list{
+					margin-top: 40px;
+					margin-bottom: 22px;
+					&>li{
+						width: 42px;
+						height: 42px;
+						display: inline-block;
+						margin-right: 10px;
+
+						&>a{
+							display: block;
+							width: 42px;
+							height: 42px;
+
+						}
+
+					}
+				}
+			}
+		}
+	}
+}
+
+	.team_list{
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+
+		.team_list_item{
+			max-width: 120px;
+			width: 100%;
+			cursor: pointer;
+			text-align: center;
+			margin: 0 10px 10px;
+
+			&>div{
+				display: block;
+				max-width: 50px;
+				width: 100%;
+				height: 50px;
+				background-color: #eeeef0;
+				border-radius: 50%;
+				margin: 0 auto 25px;
+			}
+
+			&>strong{
+				font-size: 16px;
+				line-height: 20px;
+			}
+
+			&>span{
+				font-size: 14px;
+				line-height: 20px;
+			}
+
+			&>p{
+				font-size: 12px;
+				line-height: 15px;
+			}
+		}
+	}
+}
